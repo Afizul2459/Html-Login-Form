@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Login Form</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+    
+    /* Login Container */
+    .login-container {
+      background-color: #fff;
+      padding: 2rem;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Title Styling */
+    .login-title {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Input Styling */
+    .login-input {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+    .login-input:focus {
+      border-color: #764ba2;
+      outline: none;
+    }
+
+    /* Button Styling */
+    .login-button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #764ba2;
+      color: #fff;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .login-button:hover {
+      background-color: #667eea;
+    }
+
+    /* Link Styling */
+    .forgot-password {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #764ba2;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .forgot-password:hover {
+      color: #667eea;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2 class="login-title">Login</h2>
+    <form action="#">
+      <input type="text" placeholder="Username" class="login-input" required>
+      <input type="password" placeholder="Password" class="login-input" required>
+      <button type="submit" class="login-button">Login</button>
+      <a href="#" class="forgot-password">Forgot Password?</a>
+    </form>
+  </div>
+
+</body>
+</html>
